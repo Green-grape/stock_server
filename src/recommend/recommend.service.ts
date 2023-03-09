@@ -57,7 +57,7 @@ export class RecommendService {
       {
         updatedAt: { $gte: today_start },
       },
-      '-_id -updatedAt -createdAt',
+      '-_id -updatedAt -createdAt -__v',
     );
     return stocks;
   }

@@ -18,11 +18,4 @@ export class RecommendController {
   getTodayRecommendStock() {
     return this.recommendService.getTodayRecommendStock();
   }
-  @Get()
-  test() {
-    return this.recommendService.setRecommendStock({
-      stockCodes: ['005930'],
-      stockNames: ['삼성전자'],
-    });
-  }
 }
