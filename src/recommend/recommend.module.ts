@@ -5,8 +5,8 @@ import { RecommendController } from './recommend.controller';
 import { RecommendService } from './recommend.service';
 
 @Module({
-  imports:[TypeOrmModule.forFeature([RecommendStock])],
+  imports: [],
   controllers: [RecommendController],
-  providers: [RecommendService]
+  providers: [RecommendService],
 })
 export class RecommendModule {}

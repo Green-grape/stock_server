@@ -10,8 +10,8 @@ import mongoose from 'mongoose';
 export class ChartService {
     constructor(){}
     async getStockChartMin(code:string, beginDate:number, endDate:number){
-        const StockDataModel=mongoose.model('A'+code, StockDataSchema);
-        const stockDatas=await StockDataModel.find({
+        const stockDataModel=mongoose.model('A'+code, StockDataSchema);
+        const stockDatas=await stockDataModel.find({
             date:{$gte:beginDate, $lte:endDate}
         },"-_id"); //object_id빼고출력
         return stockDatas;
