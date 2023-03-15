@@ -40,3 +40,5 @@ npm install
 ## 업데이트 내역
 
 ## 의존프로그램
+[StockData Reader](https://github.com/Green-grape/stock-data-reader):주식정보 가져오는 
+
