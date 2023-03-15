@@ -33,10 +33,8 @@ HTTP 요청 리스트
 
 
 ## 개발 환경 설정
-
 ```sh
-make install
-npm test
+npm install
 ```
 
 ## 업데이트 내역
